@@ -5,7 +5,6 @@ use MVC\Models\TaskResourceModel;
 
 class TaskRepository {
     public  $talkResourModel;
-    
     public function  __construct() {
         $this->talkResourModel= new TaskResourceModel;
     }

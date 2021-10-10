@@ -29,7 +29,14 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/MVC/task/index">Home <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/MVC/student/index">Students<span class="sr-only">(current)</span></a>
             </li>
         </ul>
     </div>
@@ -40,7 +47,7 @@
     <div class="starter-template">
 
         <?php
-        echo $content_for_layout;
+            echo $content_for_layout;
         ?>
 
     </div>

@@ -10,16 +10,14 @@ class Task extends Model
     public function create($title, $description)
     {
         $sql = "INSERT INTO tasks (title, description, created_at, updated_at) VALUES (:title, :description, :created_at, :updated_at)";
-
         $req = Database::getBdd()->prepare($sql);
-
-        return $req->execute([
+        var_dump($req);
+        var_dump($req->execute([
             'title' => $title,
             'description' => $description,
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
-
-        ]);
+        ])); 
     }
 
     public function showTask($id)

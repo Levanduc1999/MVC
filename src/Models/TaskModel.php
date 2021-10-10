@@ -1,16 +1,17 @@
 <?php
 
 namespace MVC\Models;
+use MVC\Config\Database;
 
 use MVC\Core\Model;
 
 class TaskModel extends Model
 {
-    private $id;
-    private $title;
-    private $description;
-    private $created_at;
-    private $update_at;
+    protected $id;
+    protected $title;
+    protected $description;
+    protected $created_at;
+    protected $updated_at;
     public function getID() {
         return $this->id;
     }
@@ -18,7 +19,7 @@ class TaskModel extends Model
         $this->id= $id;
     }
     public function getTitle() {
-        return $this->$title;
+        return $this->title;
     }
     public function setTitle($title) {
         $this->title= $title;
@@ -35,10 +36,10 @@ class TaskModel extends Model
     public function setCreatedAt($created_at) {
         $this->created_at= $created_at;
     }
-    public function getUpdateAt() {
-        return $this->update_at;
+    public function getUpdatedAt() {
+        return $this->updated_at;
     }
-    public function setUpdateAt($update_at) {
-        $this->update_at= $update_at;
+    public function setUpdatedAt($updated_at) {
+        $this->updated_at= $updated_at;
     }
 }
